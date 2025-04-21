@@ -1,11 +1,12 @@
 /* General Styles */
 body {
-    font-family: 'Playfair Display', serif;
-    background-color: #f3efe0; /* Light parchment-like background */
-    color: #2c2c2c; /* Dark text */
+    font-family: 'PT Serif', serif;
+    background-color: #f5f5dc; /* Light beige for vintage parchment look */
+    color: #2e2e2e; /* Dark gray for readable text */
     margin: 0;
     padding: 0;
     line-height: 1.8;
+    text-align: justify;
 }
 
 /* Container */
@@ -13,9 +14,9 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #d4c1a3;
-    background-color: #fff8e7;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #c4a484; /* Subtle brown border */
+    background-color: #fffaf0; /* Eggshell white for content area */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
 }
 
 /* Header */
@@ -26,17 +27,17 @@ header {
 
 header h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    color: #8b4513; /* Rich brown tone */
+    font-size: 3.5rem;
+    color: #6b4226; /* Deep brown for header */
     margin: 0;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     letter-spacing: 2px;
 }
 
 header .subtitle {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'PT Serif', serif;
     font-size: 1.2rem;
-    color: #5a4635; /* Subtle brown tone */
+    color: #8b5a2b; /* Light brown for subtitle */
     margin-top: 10px;
     font-style: italic;
 }
@@ -44,26 +45,37 @@ header .subtitle {
 /* Article */
 article h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    color: #2c2c2c;
-    border-bottom: 2px solid #d4c1a3;
-    padding-bottom: 5px;
+    font-size: 2.5rem;
+    color: #4b3832; /* Classic dark brown */
+    border-bottom: 2px solid #c4a484;
+    padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
 article p {
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-    text-align: justify;
-    line-height: 1.8;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-indent: 30px; /* Indent for first line of paragraphs */
 }
 
 /* Footer */
 footer {
     text-align: center;
-    margin-top: 40px;
-    font-family: 'Roboto Slab', serif;
+    margin-top: 50px;
+    font-family: 'PT Serif', serif;
     font-size: 0.9rem;
-    color: #5a4635;
+    color: #6b4226;
+}
+
+/* Additional Styling */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/old-wall.png');
+    opacity: 0.1; /* Faint vintage texture */
+    z-index: -1;
 }
