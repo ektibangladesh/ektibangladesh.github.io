@@ -15,26 +15,22 @@
             <p class="subtitle">Reflections in the Shadows of Time</p>
         </header>
         <main>
-            <article>
-                <h2>The Devil and Happiness</h2>
-                <p>
-                    The devil doesn’t always hurt you head on, happiness isn’t always brought by God. 
-                    The devil can make you happy too, for a long time even, but it will fade one day and 
-                    you will be plunged into the depths of despair. God does the same. So what’s the difference? 
-                    I believe it’s how you react when the happiness is gone, when trees no longer represent 
-                    lively nature, but a good way to hang, when ceiling fans become less than just a tool to cool 
-                    oneself in the summer heat. That’s when you realize who sent the pleasure and what was its nature.
-                </p>
-                <p>
-                    I believe that the brief 2 months of happiness brought in my life was nothing but devil’s play. 
-                    I decided to let go of it and move on to happiness that might actually be real. It may or may not last, 
-                    but it won’t come back to bite me and I’ll find a way to survive better and cope when times aren’t yellow anymore.
-                </p>
-            </article>
+            <!-- Post Creation Form -->
+            <div class="tweet-container">
+                <form id="postForm">
+                    <textarea id="postContent" placeholder="Write a post..." maxlength="280" required></textarea>
+                    <button type="submit">Post</button>
+                </form>
+            </div>
+            <!-- Posts Display Section -->
+            <div id="posts">
+                <!-- Posts will appear here -->
+            </div>
         </main>
         <footer>
             <p>© 2025 Ekti Bangladesh. All Rights Reserved.</p>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
