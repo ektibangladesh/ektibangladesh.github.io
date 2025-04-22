@@ -37,9 +37,9 @@ header .subtitle {
 }
 
 /* Article */
-article h2 {
+article h4 { /* Updated from h2 to h4 */
     font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
+    font-size: 2rem; /* Adjusted font size for h4 */
     color: #4b3832; /* Deep brown for heading */
     border-bottom: 2px solid #c4a484; /* Classic border */
     padding-bottom: 10px;
