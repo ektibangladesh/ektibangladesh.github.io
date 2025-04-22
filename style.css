@@ -33,7 +33,6 @@ header .subtitle {
     font-size: 1.2rem;
     color: #8b5a2b; /* Warm light brown for subtitle */
     margin-top: 10px;
-    font-style: italic; /* Italicized subtitle */
 }
 
 /* Article */
@@ -41,7 +40,6 @@ article p {
     font-size: 1.3rem;
     margin-bottom: 20px;
     text-indent: 30px; /* Indent for first line of paragraphs */
-    font-style: italic;
     color: #3a3a3a; /* Softer dark gray for paragraphs */
     line-height: 2; /* Increased line height for readability */
 }
@@ -74,7 +72,6 @@ body::before {
 a {
     color: #8b5a2b; /* Warm brown for links */
     text-decoration: none;
-    font-style: italic;
     border-bottom: 1px dashed #8b5a2b; /* Dashed underline for vintage feel */
 }
 
