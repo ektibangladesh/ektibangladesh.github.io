@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ekti Bangladesh</title>
-    <!-- Fonts for the classic look -->
+    <!-- Link to external CSS file -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
+            <h1>Ekti Bangladesh</h1>
+            <div id="current-time" class="current-time"></div> <!-- Time will display here -->
             <p class="subtitle">Reflections in the Shadows of Time</p>
         </header>
         <main>
@@ -34,5 +36,26 @@
             <p>© 2025 Ekti Bangladesh. All Rights Reserved.</p>
         </footer>
     </div>
+
+    <!-- Add JavaScript -->
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const options = { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric', 
+                hour: '2-digit', 
+                minute: '2-digit', 
+                second: '2-digit' 
+            };
+            document.getElementById('current-time').textContent = now.toLocaleString('en-US', options);
+        }
+
+        // Update time every second
+        setInterval(updateTime, 1000);
+        updateTime(); // Initialize immediately
+    </script>
 </body>
 </html>
