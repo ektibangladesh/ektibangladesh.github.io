@@ -92,3 +92,12 @@ a:hover {
     color: #4b3832; /* Darker brown on hover */
     border-bottom: 1px solid #4b3832; /* Solid underline on hover */
 }
+
+/* Styles for Current Time */
+.current-time {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #4b3832; /* Deep brown for visibility */
+    margin-bottom: 10px;
+}
